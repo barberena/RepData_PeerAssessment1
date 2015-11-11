@@ -177,11 +177,10 @@ median(meanStepsPerDayPlus$count)
 ```
 
 The mean and median for number of steps have lowered since replacing the missing
-values.  This is the opposite of what logic would expect since the missing
-values are defaulted to zero.  One would think that by adding the mean
-values as defaults, replacing the zeros, that the total mean and median numbers
-would increase.  Further analysis of the data is required to determine the
-reason for this anomaly.
+values.  Since the missing data was ignored during the calculation of the mean
+and median in the first calculations, replacing the missing values with the
+median step values for the given time interval across all days has resulted in
+the new total mean and median calculations to decrease.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
